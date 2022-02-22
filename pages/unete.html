@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../styles/styles-responsive.css" />
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Slackey&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <title>Capybara | Clinica de Animales Exóticos</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__logo">
+        <img src="../images/logo.png" alt="Logo" />
+      </div>
+      <div class="header__title">
+        <h1><a href="../index.html">Clínica Capybara</a></h1>
+      </div>
+
+      <div class="header__buttons">
+        <button id="urgencias">Urgencias</button>
+        <button>Turnos</button>
+      </div>
+    </header>
+    <nav class="nav">
+      <a href="quienes-somos.html">Quienes somos</a>
+      <a href="nuestras-clinicas.html">Nuestras clínicas</a>
+      <a href="salud-animal.html">Salud animal</a>
+      <a href="prensa.html">Prensa</a>
+      <a href="unete.html" class="selected">Únete</a>
+    </nav>
+
+    <main class="main" id="main-unete">
+      <section class="section" id="form">
+        <div class="card">
+          <h2>Trabaja con nosotros!</h2>
+          <form action="" method="post">
+            <table>
+              <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre completo"
+                  /><br />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="email">email:</label></td>
+                <td>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="email@dominio.com"
+                  /><br />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="linkedin">Perfil LinkedIn:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="linkedin"
+                    name="linkedin"
+                    placeholder="linkedin.com/in/usuario"
+                  /><br />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="telefono">Telefono:</label></td>
+                <td>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="11-5555-3333"
+                    pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
+                  /><br />
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="submit" value="Enviar" /></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="unete">
+        <div class="card">
+          <img src="../images/veterinariagato.jpg" alt="Veterinaria" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© 2022 Clínica Veterinaria Capybara</div>
+      <div class="social-media">
+        <a href="http://www.linkedin.com"
+          ><img src="../images/linkedin.png" alt="Linkedin"
+        /></a>
+        <a href="http://www.youtube.com"
+          ><img src="../images/youtube.png" alt="Youtube"
+        /></a>
+        <a href="http://www.twitter.com"
+          ><img src="../images/twitter.png" alt="Twitter"
+        /></a>
+        <a href="http://www.instagram.com"
+          ><img src="../images/instagram.png" alt="Instagram"
+        /></a>
+        <a href="http://www.facebook.com"
+          ><img src="../images/facebook.png" alt="Facebook"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

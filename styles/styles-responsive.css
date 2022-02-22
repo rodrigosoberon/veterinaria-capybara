@@ -1,0 +1,369 @@
+/* ?-----------------------------------------------------------------------------------------
+?                                           GENERAL
+?--------------------------------------------------------------------------------------------*/
+
+:root {
+  --color1: #4d4e50;
+  --color2: #cc497f;
+  --color3: #f2c849;
+  --color4: #677edc;
+  --color5: #65b1be;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  color: var(--color1);
+  margin: 0;
+}
+
+/* ?-----------------------------------------------------------------------------------------
+?                                           BODY
+?--------------------------------------------------------------------------------------------*/
+
+.body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 15vh 8vh auto 10vh;
+  grid-template-areas:
+    "header "
+    "navbar "
+    "main "
+    "footer ";
+}
+
+/* ?-----------------------------------------------------------------------------------------
+?                                           HEADER
+?--------------------------------------------------------------------------------------------*/
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "logo title" "buttons buttons";
+  justify-content: stretch;
+}
+
+.header__logo {
+  grid-area: logo;
+  height: 10vw; /* * la altura es 6% del ancho de la pantalla */
+  align-self: center;
+  place-self: center;
+}
+
+.header__logo img {
+  height: 100%;
+}
+
+.header__title {
+  grid-area: title;
+  height: auto;
+  align-self: center;
+  place-self: center;
+}
+
+.header__buttons {
+  grid-area: buttons;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header__title h1 a {
+  color: var(--color2);
+  text-decoration: none;
+  font-family: "Slackey";
+  font-size: 8vw; /* * la altura es 8% del ancho de la pantalla */
+}
+
+button {
+  padding: 0.5em 1em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--color3);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#urgencias {
+  background-color: var(--color2);
+  color: #fff;
+}
+
+/* ?-----------------------------------------------------------------------------------------
+?                                           NAVBAR
+?--------------------------------------------------------------------------------------------*/
+
+.nav {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  /* margin: 1rem 0; */
+  height: auto;
+}
+
+nav a:link,
+a:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+nav .selected {
+  background-color: var(--color5);
+  color: white;
+}
+
+nav a:hover,
+a:active {
+  background-color: var(--color3);
+  color: white;
+}
+
+nav a {
+  font-size: small;
+  align-self: center;
+  padding: 0.5em 0.5em;
+}
+
+/* ?-----------------------------------------------------------------------------------------
+?                                           MAIN
+?--------------------------------------------------------------------------------------------*/
+
+/* ? fondos */
+#main-index {
+  background-image: url("../images/bg_cobayo2.jpeg");
+  background-position: center;
+}
+
+#main-quienes-somos {
+  background-image: url("../images/bg_sala.jpeg");
+}
+
+#main-nuestras-clinicas {
+  background-image: url("../images/bg_sala.jpeg");
+}
+
+#main-salud-animal {
+  background-image: url("../images/bg_sala.jpeg");
+}
+
+#main-prensa {
+  background-image: url("../images/bg_cobayo.jpeg");
+  background-position: center;
+}
+
+#main-unete {
+  background-image: url("../images/bg_sala.jpeg");
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 100%;
+}
+
+h2 {
+  color: #cc497f;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-self: stretch;
+}
+
+video {
+  width: 100%;
+}
+
+.card {
+  background-color: #ffffffe6;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0rem;
+}
+
+.article {
+  background-color: #ffffffe6;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0.5em 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  max-width: 30vw;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+section div img {
+  width: 100%;
+}
+
+/* ?-----------------------------------------------------------------------------------------
+?                                           FOOTER
+?--------------------------------------------------------------------------------------------*/
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a img {
+  height: 1.5em;
+  margin: 0 0.5em;
+}
+
+/* ?-----------------------------------------------------------------------------------------
+?                                        RESPONSIVE > 640
+?--------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 640px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    height: 12vw;
+    max-height: 100px;
+  }
+
+  .header__title h1 a {
+    font-size: 5vw;
+  }
+  .header__buttons {
+    height: 5vh;
+    place-self: center;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #bienvenidos {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #nosotros {
+    grid-column: 1 / span 3;
+  }
+
+  #video {
+    grid-column: 1 / span 3;
+  }
+
+  #clinicas {
+    grid-column: 1 / span 2;
+  }
+
+  #mapa {
+    grid-column: 1 / span 3;
+  }
+
+  #subtitulo {
+    grid-column: 1 / span 3;
+  }
+
+  .article {
+    margin: 1em;
+    flex-direction: column;
+  }
+
+  .description {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  #unete {
+    grid-column: 2 / span 3;
+  }
+
+  .footer {
+    flex-direction: row;
+    align-self: center;
+    margin-top: 0;
+  }
+}
+
+/* ?-----------------------------------------------------------------------------------------
+?                                        RESPONSIVE > 1024
+?--------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1024px) {
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #bienvenidos {
+    grid-column: 1;
+  }
+
+  #nosotros {
+    grid-column: 1 / span 2;
+  }
+
+  #video {
+    grid-column: 3 / span 2;
+  }
+
+  #clinicas {
+    grid-column: 1 / span 1;
+  }
+
+  #mapa {
+    grid-column: 2 / span 3;
+  }
+
+  #subtitulo {
+    grid-column: 1 / span 4;
+  }
+
+  #form {
+    grid-column: 1 / span 2;
+  }
+
+  #unete {
+    grid-column: 3 / span 4;
+  }
+}
