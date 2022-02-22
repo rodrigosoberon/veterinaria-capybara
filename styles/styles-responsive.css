@@ -76,7 +76,8 @@
   font-size: 8vw; /* * la altura es 8% del ancho de la pantalla */
 }
 
-button {
+button,
+#enviar {
   padding: 0.5em 1em;
   font-size: 12px;
   text-transform: uppercase;
@@ -88,15 +89,20 @@ button {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   outline: none;
+  transition: all 0.3s ease 0s;
+  width: auto;
 }
 
-button:hover {
+button:hover,
+#enviar:hover {
   background-color: var(--color3);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
   color: #fff;
+  transform: translateY(-7px);
 }
 
-#urgencias {
+#urgencias,
+#enviar {
   background-color: var(--color2);
   color: #fff;
 }
@@ -111,7 +117,6 @@ button:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: start;
-  /* margin: 1rem 0; */
   height: auto;
 }
 
@@ -126,18 +131,21 @@ a:visited {
 nav .selected {
   background-color: var(--color5);
   color: white;
+  transform: translateY(7px);
 }
 
 nav a:hover,
 a:active {
   background-color: var(--color3);
   color: white;
+  transform: translateY(7px);
 }
 
 nav a {
   font-size: small;
   align-self: center;
   padding: 0.5em 0.5em;
+  transition: background-color 0.5s, transform 0.5s;
 }
 
 /* ?-----------------------------------------------------------------------------------------
@@ -155,7 +163,11 @@ nav a {
 }
 
 #main-nuestras-clinicas {
-  background-image: url("../images/bg_sala.jpeg");
+  background: radial-gradient(
+    circle,
+    rgba(103, 126, 220, 1) 0%,
+    rgba(101, 177, 190, 1) 100%
+  );
 }
 
 #main-salud-animal {
@@ -203,6 +215,10 @@ video {
   margin: 0rem;
 }
 
+#bienvenidos .card {
+  text-align: center;
+}
+
 .article {
   background-color: #ffffffe6;
   padding: 1rem;
@@ -210,6 +226,23 @@ video {
   margin: 0.5em 1em;
   display: flex;
   flex-direction: row;
+}
+
+.article:hover {
+  animation-name: articulos;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes articulos {
+  0% {
+    background-color: #ffffffe6;
+  }
+  100% {
+    background-color: #ffffff9c;
+  }
 }
 
 article img {
@@ -226,6 +259,16 @@ article img {
 
 section div img {
   width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+td input {
+  width: 100%;
+  min-width: 150px;
 }
 
 /* ?-----------------------------------------------------------------------------------------
