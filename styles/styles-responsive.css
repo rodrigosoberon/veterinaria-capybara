@@ -21,15 +21,15 @@
 ?--------------------------------------------------------------------------------------------*/
 
 .body {
-  height: 100vh;
-  display: grid;
+  min-height: 100vh;
+  /* display: grid;
   grid-template-columns: auto;
   grid-template-rows: 15vh 8vh auto 10vh;
   grid-template-areas:
     "header "
     "navbar "
     "main "
-    "footer ";
+    "footer "; */
 }
 
 /* ?-----------------------------------------------------------------------------------------
