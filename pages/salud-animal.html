@@ -25,7 +25,7 @@
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
     <title>Capybara | Clinica de Animales Exóticos</title>
   </head>
-  <body class="body">
+  <body class="class=container-fluid p-0 d-flex flex-column min-vh-100">
     <header
       class="container-fluid row justify-content-around align-items-center my-4"
     >
@@ -93,69 +93,84 @@
     </div>
 
     <main
-      class="container-fluid flex-grow-1 p-0 bg-warning d-flex flex-column justify-content-center"
+      class="container-fluid flex-grow-1 d-flex flex-column"
       id="main-salud-animal"
     >
-      <section class="section" id="subtitulo">
-        <h2 class="card">Cuidados para tu mascota</h2>
+      <section class="container-fluid my-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Cuidados para tu mascota</h2>
+          </div>
+        </div>
       </section>
 
-      <article class="article">
-        <img src="../images/cobayo.jpg" alt="Cobayo" />
-        <div class="description">
-          <h4>Roedores</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus culpa voluptatibus modi dolor magnam.
-          </p>
-          <a href="#">Seguir leyendo...</a>
+      <section class="container-fluid row">
+        <div class="container-fluid col-sm-6 col-md-4 col-lg-3 pb-3">
+          <div class="card border-0">
+            <img class="card-img-top" src="../images/cobayo.jpg" alt="Cobayo" />
+            <div class="card-body">
+              <h4 class="card-title">Roedores</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus culpa voluptatibus modi dolor magnam.
+              </p>
+              <a class="card-link" href="#">Seguir leyendo...</a>
+            </div>
+          </div>
         </div>
-      </article>
-
-      <article class="article">
-        <img src="../images/iguana.jpg" alt="Iguana" />
-        <div class="description">
-          <h4>Reptiles</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus culpa voluptatibus modi dolor magnam.
-          </p>
-          <a href="#">Seguir leyendo...</a>
+        <div class="container-fluid col-sm-6 col-md-4 col-lg-3 pb-3">
+          <div class="card border-0">
+            <img class="card-img-top" src="../images/iguana.jpg" alt="Iguana" />
+            <div class="card-body">
+              <h4 class="card-title">Reptiles</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus culpa voluptatibus modi dolor magnam.
+              </p>
+              <a class="card-link" href="#">Seguir leyendo...</a>
+            </div>
+          </div>
         </div>
-      </article>
-      <article class="article">
-        <img src="../images/conejo.jpg" alt="Conejo" />
-        <div class="description">
-          <h4>Conejos</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus culpa voluptatibus modi dolor magnam.
-          </p>
-          <a href="#">Seguir leyendo...</a>
+        <div class="container-fluid col-sm-6 col-md-4 col-lg-3 pb-3">
+          <div class="card border-0">
+            <img class="card-img-top" src="../images/conejo.jpg" alt="Conejo" />
+            <div class="card-body">
+              <h4 class="card-title">Conejos</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus culpa voluptatibus modi dolor magnam.
+              </p>
+              <a class="card-link" href="#">Seguir leyendo...</a>
+            </div>
+          </div>
         </div>
-      </article>
-      <article class="article">
-        <img src="../images/huron.jpg" alt="Huron" />
-        <div class="description">
-          <h4>Hurones</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus culpa voluptatibus modi dolor magnam.
-          </p>
-          <a href="#">Seguir leyendo...</a>
+        <div class="container-fluid col-sm-6 col-md-4 col-lg-3 pb-3">
+          <div class="card border-0">
+            <img class="card-img-top" src="../images/huron.jpg" alt="Huron" />
+            <div class="card-body">
+              <h4 class="card-title">Hurones</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus culpa voluptatibus modi dolor magnam.
+              </p>
+              <a class="card-link" href="#">Seguir leyendo...</a>
+            </div>
+          </div>
         </div>
-      </article>
-      <article class="article">
-        <img src="../images/loro.jpg" alt="Loro" />
-        <div class="description">
-          <h4>Aves</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus culpa voluptatibus modi dolor magnam.
-          </p>
-          <a href="#">Seguir leyendo...</a>
+        <div class="container-fluid col-sm-6 col-md-4 col-lg-3 pb-3">
+          <div class="card border-0">
+            <img class="card-img-top" src="../images/loro.jpg" alt="Loro" />
+            <div class="card-body">
+              <h4 class="card-title">Aves</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus culpa voluptatibus modi dolor magnam.
+              </p>
+              <a class="card-link" href="#">Seguir leyendo...</a>
+            </div>
+          </div>
         </div>
-      </article>
+      </section>
     </main>
 
     <footer class="container-fluid row">

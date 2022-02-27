@@ -68,6 +68,28 @@ div nav{
     background-attachment: fixed;
   }
 
+  #main-quienes-somos {
+    background-image: url("../images/bg_sala.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #main-nuestras-clinicas {
+    background: radial-gradient(
+      circle,
+      rgba(103, 126, 220, 1) 0%,
+      rgba(101, 177, 190, 1) 100%
+    );
+  }
+
+  #main-salud-animal {
+    background-image: url("../images/bg_sala.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
   a img{
       height: 30px;
   }
