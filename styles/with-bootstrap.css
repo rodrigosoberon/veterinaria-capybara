@@ -90,6 +90,20 @@ div nav{
     background-attachment: fixed;
   }
 
+  #main-prensa {
+    background-image: url("../images/bg_cobayo.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #main-unete {
+    background-image: url("../images/bg_cobayo.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
   a img{
       height: 30px;
   }
