@@ -1,0 +1,16 @@
+@import "colores";
+@import "fuentes";
+
+h1 a{
+    text-decoration: none;
+    font-family: $fuente-slackey;
+    color: $color-2;
+}
+
+h2{
+    color: $color-2;
+}
+
+#logo{
+    max-width: 8vh;
+}
