@@ -1,0 +1,12 @@
+@import "./scss/colores";
+@import "./scss/fuentes";
+@import "./scss/botones";
+@import "./scss/encabezado";
+@import "./scss/navbar";
+@import "./scss/main";
+@import "./scss/footer";
+
+*{
+    color: $color-1;
+    font-family: $fuente-nunito;
+}

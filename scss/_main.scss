@@ -1,0 +1,48 @@
+@import "colores";
+
+.card{
+    background-color: #ffffffe6;
+}
+
+#main-index {
+    background-image: url("../images/bg_cobayo2.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #main-quienes-somos {
+    background-image: url("../images/bg_sala.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #main-nuestras-clinicas {
+    background: radial-gradient(
+      circle,
+      $color-4 0%,
+      $color-5 100%
+    );
+  }
+
+  #main-salud-animal {
+    background-image: url("../images/bg_sala.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #main-prensa {
+    background-image: url("../images/bg_cobayo.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #main-unete {
+    background-image: url("../images/bg_cobayo.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }

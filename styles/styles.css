@@ -1,0 +1,78 @@
+.mi-boton {
+  padding: 0.5em 1em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease 0s; }
+  .mi-boton:hover {
+    background-color: #f2c849;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transform: translateY(-7px); }
+
+#urgencias {
+  background-color: #cc497f;
+  color: #fff; }
+
+h1 a {
+  text-decoration: none;
+  font-family: "Slackey";
+  color: #cc497f; }
+
+h2 {
+  color: #cc497f; }
+
+#logo {
+  max-width: 8vh; }
+
+div nav {
+  background-color: #677edc; }
+
+.card {
+  background-color: #ffffffe6; }
+
+#main-index {
+  background-image: url("../images/bg_cobayo2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#main-quienes-somos {
+  background-image: url("../images/bg_sala.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#main-nuestras-clinicas {
+  background: radial-gradient(circle, #677edc 0%, #65b1be 100%); }
+
+#main-salud-animal {
+  background-image: url("../images/bg_sala.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#main-prensa {
+  background-image: url("../images/bg_cobayo.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#main-unete {
+  background-image: url("../images/bg_cobayo.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+a img {
+  height: 30px; }
+
+* {
+  color: #4d4e50;
+  font-family: "Nunito", sans-serif; }
