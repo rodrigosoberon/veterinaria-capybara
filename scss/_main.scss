@@ -1,48 +1,42 @@
 @import "colores";
 
+@mixin generador-fondo($url){
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .card{
     background-color: #ffffffe6;
 }
 
 #main-index {
-    background-image: url("../images/bg_cobayo2.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  @include generador-fondo("../images/bg_cobayo2.jpeg")
   }
 
   #main-quienes-somos {
-    background-image: url("../images/bg_sala.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    @include generador-fondo("../images/bg_sala.jpeg")
   }
 
   #main-nuestras-clinicas {
     background: radial-gradient(
       circle,
-      $color-4 0%,
-      $color-5 100%
+      map-get($map: $colores, $key: color-4) 0%,
+      map-get($map: $colores, $key: color-5) 100%
     );
   }
 
   #main-salud-animal {
-    background-image: url("../images/bg_sala.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    @include generador-fondo("../images/bg_sala.jpeg")
   }
 
   #main-prensa {
-    background-image: url("../images/bg_cobayo.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    @include generador-fondo("../images/bg_cobayo.jpeg")
   }
 
   #main-unete {
-    background-image: url("../images/bg_cobayo.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    @include generador-fondo("../images/bg_cobayo.jpeg")
   }
+
+ 
