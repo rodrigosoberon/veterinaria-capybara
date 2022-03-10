@@ -7,6 +7,6 @@
 @import "./scss/footer";
 
 *{
-    color: $color-1;
+    color: map-get($map: $colores, $key: color-1);
     font-family: $fuente-nunito;
 }
