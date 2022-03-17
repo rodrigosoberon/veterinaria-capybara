@@ -31,6 +31,8 @@
   </head>
 
   <body class="class=container-fluid p-0 d-flex flex-column min-vh-100">
+
+    <!-- ? HEADER -->
     <header
       class="container-fluid row justify-content-around align-items-center my-4"
     >
@@ -49,11 +51,12 @@
       <div
         class="container-fluid d-flex justify-content-around align-content-center flex-nowrap h-100 col-sm-3 mx-0"
       >
-        <button class="urgencias">Urgencias</button>
-        <button class="mi-boton">Turnos</button>
+        <button class="urgencias" id="mi-boton">Urgencias</button>
+        <button class="mi-boton" id="mi-boton">Turnos</button>
       </div>
     </header>
 
+    <!-- ? NAVBAR -->
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
@@ -94,6 +97,7 @@
       </nav>
     </div>
 
+    <!-- ? MAIN -->
     <main
       class="container-fluid flex-grow-1 d-flex flex-column"
       id="main-salud-animal"
@@ -112,7 +116,7 @@
             <div class="card border-0 h-100">
               <img
                 class="card-img-top"
-                src="../images/cobayo.jpg"
+                src="../images/cobayo.webp"
                 alt="Cobayo"
               />
               <div class="card-body">
@@ -130,7 +134,7 @@
             <div class="card border-0 h-100">
               <img
                 class="card-img-top"
-                src="../images/iguana.jpg"
+                src="../images/iguana.webp"
                 alt="Iguana"
               />
               <div class="card-body">
@@ -148,7 +152,7 @@
             <div class="card border-0 h-100">
               <img
                 class="card-img-top"
-                src="../images/conejo.jpg"
+                src="../images/conejo.webp"
                 alt="Conejo"
               />
               <div class="card-body">
@@ -163,7 +167,7 @@
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 pb-3">
             <div class="card border-0 h-100">
-              <img class="card-img-top" src="../images/huron.jpg" alt="Huron" />
+              <img class="card-img-top" src="../images/huron.webp" alt="Huron" />
               <div class="card-body">
                 <h3 class="card-title">Hurones</h3>
                 <p class="card-text">
@@ -176,7 +180,7 @@
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 pb-3">
             <div class="card border-0">
-              <img class="card-img-top" src="../images/loro.jpg" alt="Loro" />
+              <img class="card-img-top" src="../images/loro.webp" alt="Loro" />
               <div class="card-body">
                 <h3 class="card-title">Aves</h3>
                 <p class="card-text">
@@ -192,6 +196,7 @@
       </section>
     </main>
 
+    <!-- ? FOOTER -->
     <footer class="container-fluid row">
       <div class="container-fluid col-sm-6 d-flex justify-content-center">
         <p class="my-auto text-nowrap">© 2022 Clínica Veterinaria Capybara</p>
@@ -223,5 +228,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/links.js"></script>
   </body>
 </html>

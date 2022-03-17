@@ -46,14 +46,14 @@ div nav {
 }
 
 #main-index {
-  background-image: url("../images/bg_cobayo2.jpeg");
+  background-image: url("../images/bg_cobayo2.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 #main-quienes-somos {
-  background-image: url("../images/bg_sala.jpeg");
+  background-image: url("../images/bg_sala.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -64,21 +64,21 @@ div nav {
 }
 
 #main-salud-animal {
-  background-image: url("../images/bg_sala.jpeg");
+  background-image: url("../images/bg_sala.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 #main-prensa {
-  background-image: url("../images/bg_cobayo.jpeg");
+  background-image: url("../images/bg_cobayo.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 #main-unete {
-  background-image: url("../images/bg_cobayo.jpeg");
+  background-image: url("../images/bg_cobayo.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -92,5 +92,3 @@ a img {
   color: #4d4e50;
   font-family: "Nunito", sans-serif;
 }
-
-/*# sourceMappingURL=styles.css.map */

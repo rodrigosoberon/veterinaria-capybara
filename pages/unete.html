@@ -31,6 +31,8 @@
   </head>
 
   <body class="class=container-fluid p-0 d-flex flex-column min-vh-100">
+
+    <!-- ? HEADER -->
     <header
       class="container-fluid row justify-content-around align-items-center my-4"
     >
@@ -49,8 +51,8 @@
       <div
         class="container-fluid d-flex justify-content-around align-content-center flex-nowrap h-100 col-sm-3 mx-0"
       >
-        <button class="urgencias">Urgencias</button>
-        <button class="mi-boton">Turnos</button>
+        <button class="urgencias" id="mi-boton">Urgencias</button>
+        <button class="mi-boton" id="mi-boton">Turnos</button>
       </div>
     </header>
 
@@ -94,6 +96,7 @@
       </nav>
     </div>
 
+    <!-- ? MAIN -->
     <main
       class="container-fluid flex-grow-1 d-flex flex-column justify-content-center"
       id="main-unete"
@@ -143,7 +146,7 @@
                     />
                   </div>
                   <div class="d-flex justify-content-center">
-                    <button type="submit" class="mi-boton">Enviar</button>
+                    <button type="submit" class="mi-boton" id="mi-boton">Enviar</button>
                   </div>
 
               </form>
@@ -155,7 +158,7 @@
           <div class="card border-0">
             <div class="card-body">
               <img
-                src="../images/veterinariagato.jpg"
+                src="../images/veterinariagato.webp"
                 alt="Veterinaria"
                 width="100%"
               />
@@ -165,6 +168,7 @@
       </section>
     </main>
 
+    <!-- ? FOOTER -->
     <footer class="container-fluid row">
       <div class="container-fluid col-sm-6 d-flex justify-content-center">
         <p class="my-auto text-nowrap">© 2022 Clínica Veterinaria Capybara</p>
@@ -196,5 +200,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/links.js"></script>
   </body>
 </html>

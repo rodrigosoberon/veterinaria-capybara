@@ -12,11 +12,11 @@
 }
 
 #main-index {
-  @include generador-fondo("../images/bg_cobayo2.jpeg")
+  @include generador-fondo("../images/bg_cobayo2.webp")
   }
 
   #main-quienes-somos {
-    @include generador-fondo("../images/bg_sala.jpeg")
+    @include generador-fondo("../images/bg_sala.webp")
   }
 
   #main-nuestras-clinicas {
@@ -28,15 +28,15 @@
   }
 
   #main-salud-animal {
-    @include generador-fondo("../images/bg_sala.jpeg")
+    @include generador-fondo("../images/bg_sala.webp")
   }
 
   #main-prensa {
-    @include generador-fondo("../images/bg_cobayo.jpeg")
+    @include generador-fondo("../images/bg_cobayo.webp")
   }
 
   #main-unete {
-    @include generador-fondo("../images/bg_cobayo.jpeg")
+    @include generador-fondo("../images/bg_cobayo.webp")
   }
 
  
